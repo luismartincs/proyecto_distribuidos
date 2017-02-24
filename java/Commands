@@ -1,3 +1,4 @@
+echo 200 > /proc/sys/net/ipv4/igmp_max_memberships
 /usr/java/jdk/bin/javac -cp jSerialComm.jar:. DemoSerial.java
 /usr/java/jdk/bin/java -cp jSerialComm.jar:. DemoSerial
 
