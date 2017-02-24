@@ -1,3 +1,9 @@
 /usr/java/jdk/bin/javac -cp jSerialComm.jar:. DemoSerial.java
 /usr/java/jdk/bin/java -cp jSerialComm.jar:. DemoSerial
 
+//Remove all class files
+//Linux
+find -name "*.class" -exec rm -R {} \;
+
+//Mac
+find . -type f -regex '.*\.class' -print -exec rm rf {} \;

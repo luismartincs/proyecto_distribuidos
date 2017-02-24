@@ -13,7 +13,7 @@ public class SerialInterface{
 	}
 
 	public void open(){
-		comPort = SerialPort.getCommPorts()[1];
+		comPort = SerialPort.getCommPorts()[2];
 		comPort.openPort();
 		System.out.println("Open: "+comPort.getDescriptivePortName()+","+comPort.getBaudRate());
 	}
